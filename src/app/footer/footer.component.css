@@ -1,0 +1,21 @@
+footer{
+    background-color:  white;
+    color: #222;
+}
+a {
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+a:hover {
+    color: #F58d17;
+}
+
+
+h6{
+    color:#F58d17;
+}
+i{
+    color:#F58d17;
+}

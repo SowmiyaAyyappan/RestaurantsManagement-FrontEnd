@@ -1,0 +1,27 @@
+<body>
+    <div class="article-contener">
+        <ul class="groups"  *ngFor="let food of array | orderBy: 'starRating'  : true ,let i=index" >
+            <li> 
+                <div class="card" >
+                    <div class="image-session">
+                        <span class="image" >
+                            <img src="{{food.image}}" style=" width: 280px;height: 220px;object-fit: cover;">
+                        </span>
+                    </div>
+                    <div class="meta-sission">
+                        <div class="body">
+                            <h2 class="title">{{food.restaurantName}}</h2>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4 class="desc">{{food.address}}</h4>
+                            <h4 class="desc">{{food.signatureDish}}</h4>
+                        </div>
+                        <div class="footer">
+                            <a href="#" class="button">Add Review →</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+

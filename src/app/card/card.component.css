@@ -1,0 +1,44 @@
+
+
+img{
+
+  width:100%;
+}
+section{
+  padding-top:120px;
+  padding-bottom: 120px;
+}
+
+
+#about .divider {
+  width: 60px;
+  height: 2px;
+  display: block;
+  background-color: #F58d17;
+}
+
+
+/* Reviews */
+#reviews {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/mi.jpg);
+}
+.review img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.review .quote-icon {
+  font-size: 74px;
+  color: #F58d17;
+  line-height: 1;
+}
+
+#reviews .carousel-indicators {
+  margin-bottom: -3rem;
+}
+ #reviews h1{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 5%;
+ }

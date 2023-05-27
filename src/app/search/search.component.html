@@ -1,0 +1,74 @@
+<app-navbar></app-navbar>
+
+<mat-progress-bar mode="indeterminate" *ngIf="loader" style="margin-top: 93px;"></mat-progress-bar>
+
+<section id="menu" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 intro-text">
+                <h1>Our Services</h1>
+                <h4>"Good food choices are good investments!"</h4>
+                   <p> We "Happy Pigg" brings you best of all
+                    restaurant out of town.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="search by cuisine" 
+            [(ngModel)]="searchItem"
+            (ngModelChange)="search()"
+            >
+          </div>
+        <div class="tab-content" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                tabindex="0">
+
+                <div class="row gy-4 ">
+                    <div class="col-lg-3 col-sm-6" *ngFor="let food of array | orderBy: 'starRating'  : true ,let i=index" >
+                        <div class = "__area text-center">
+                            <a class = "__card">
+                              <img src = "{{food.image}}" class="img-fluid __img"  style="width: 300px;height:200px;" />
+                              <div class = "__card_detail text-left">   
+                                <h5>{{food.restaurantName}}</h5>
+                                <p>
+                                 {{food.restaurantLocation}}
+                                </p>
+                                <div class = "__type">
+                                  <span >{{food.cuisine}}</span>
+                                  <span >{{food.category}}</span>
+                                </div>
+                                <div class = "__detail"  >
+                                    <span>
+                                        <ngb-rating 
+                                        [max]="5" 
+                                        [readonly]="true" 
+                                        [(rate)]="food.starRating"
+                                        [style.color]="food.starRating > 4 ? 'green': 'red' ">
+                                        </ngb-rating>
+                                    </span>
+                                    <span>{{food.starRating}}</span>
+                                    <button class="btn" (click)="goto(food.id)">To Know More</button>
+                                    </div>
+                                </div>
+                            </a>
+                          </div>   
+                    </div>
+                </div>      
+            </div>
+          
+            
+        </div>
+        
+        <div *ngIf="unavailable">
+            <div class="error w-75 mx-auto d-flex align-items-center justify-content-center" role="alert">
+                <img src="../assets/cry.png" style="width: 200px;height:200px;">
+                Sorry!The cuisine you search is not found.
+            </div>
+        </div>
+    </div>
+   
+</section>
+<app-footer></app-footer>

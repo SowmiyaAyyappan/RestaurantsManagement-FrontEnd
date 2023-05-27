@@ -1,0 +1,141 @@
+<app-navbar></app-navbar>
+<section id="about">
+  <div class="container">
+      <div class="row gy-4 align-items-center">
+          <div class="col-lg-5">
+              <img src="../assets/c.jpg" alt="">
+          </div>
+          <div class="col-lg-5">
+              <h1>About us</h1>
+              <div class="divider my-4"></div>
+              <h4>Happy Pigg!</h4>
+              <p> We are a leading restaurant-tech company with a suite of products for Fine-Dine Restaurants, QSR, 
+                  Pubs, Cafes, Hotels & Cloud Kitchens. Our products are designed to not only streamline operations, 
+                  but also realise higher Revenue & Profits.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+ <!-- Review -->
+ <section id="reviews" class="bg-cover">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 intro-text">
+              <h1 class="text-white" >Our Client Reviews</h1>
+          </div>
+      </div>
+
+      <div id="reviewSlider" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+
+              <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-8">
+                          <div class="review bg-white p-5 text-center">
+                              <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                              <p class="mb-0">This website 'Happy Pigg' shows the chennai's best restaurants
+                                of all time with best reviews.This website is managed well by team.My kudos to 
+                                the entire team of 'Happy Pigg!'.Thankyou for your wonderful services.
+                              </p>
+                              <div class="person mt-4">
+                                  <img src="../assets/avatar1.jpg" alt="">
+                                  <h4 class="mb-0 mt-2">Joe Goldberg</h4>
+                                  <span>
+                                    <ngb-rating 
+                                    [max]="5" 
+                                    [readonly]="true" 
+                                    [rate]="4"
+                                    style="color: #F58d17">
+                                    </ngb-rating>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-8">
+                          <div class="review bg-white p-5 text-center">
+                              <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                              <p class="mb-0">I truly loved this website.It's so easy to use and it provide us
+                                restaurant on reviews which is much helpful.It provides only true information
+                                based on customer reviews.It would be much helpful for pepole new to Chennai.
+                                Thank you 'Happy Pigg!' for your excellent job.
+                              </p>
+                              <div class="person mt-4">
+                                  <img src="../assets/avatar2.jpg" alt="">
+                                  <h4 class="mb-0 mt-2">Phoebe Buffay</h4>
+                                  <span>
+                                    <ngb-rating 
+                                    [max]="5" 
+                                    [readonly]="true" 
+                                    [rate]="5"
+                                    style="color: #F58d17">
+                                    </ngb-rating>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="review bg-white p-5 text-center">
+                            <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                            <p class="mb-0">I liked this website but not satisfied with it's service.
+                                It only shows leading restaurants of Chennai not any other cities.
+                                The website would be better if they extend it to some more important cities.
+                                Thank you.
+
+                            </p>
+                            <div class="person mt-4">
+                                <img src="../assets/avatar3.jpg" alt="">
+                                <h4 class="mb-0 mt-2">William Smith</h4>
+                                <span>
+                                    <ngb-rating 
+                                    [max]="5" 
+                                    [readonly]="true" 
+                                    [rate]="2"
+                                    style="color: #F58d17">
+                                    </ngb-rating>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#reviewSlider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#reviewSlider" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+</section>
+
+
+<app-footer></app-footer>
+
